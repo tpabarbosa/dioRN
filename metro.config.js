@@ -6,12 +6,17 @@
  */
 
 module.exports = {
-  transformer: {
-    getTransformOptions: async () => ({
-      transform: {
-        experimentalImportSupport: false,
-        inlineRequires: true,
-      },
-    }),
-  },
+    resolver: {
+        /* resolver options */
+        sourceExts: ['jsx', 'js'],
+        //add here
+    },
+    transformer: {
+        getTransformOptions: async() => ({
+            transform: {
+                experimentalImportSupport: false,
+                inlineRequires: true,
+            },
+        }),
+    },
 };

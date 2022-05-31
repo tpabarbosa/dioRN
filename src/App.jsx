@@ -31,27 +31,33 @@ const App = () => {
 
   return (
     <SafeAreaView style={style.container}>
-      <StatusBar backgroundColor={colorGithub} barStyle="light-content" />
+      <StatusBar
+        backgroundColor={colorGithub}
+        barStyle="light-content"
+      />
       <View style={style.content}>
         <Image
           accessibilityLabel="Ismael no quarto com fundo azul"
           style={style.avatar}
-          source={{uri: imageProfileGithub}}
+          source={{ uri: imageProfileGithub }}
         />
         <Text
           accessibilityLabel="Nome: ismael moreira"
-          style={[style.defaultText, style.name]}>
+          style={[style.defaultText, style.name]}
+        >
           Ismael Moreira
         </Text>
         <Text
           accessibilityLabel="Nickname: ismael sousa"
-          style={[style.defaultText, style.nickname]}>
+          style={[style.defaultText, style.nickname]}
+        >
           ismaelsousa
         </Text>
         <Text
           accessibilityLabel="Descrição: Software engineer | Leader tech at Fleye | Mobile Developer | Mentor
           at Catapulta.club @ismaelmoreiraa | Prof. na DIO"
-          style={[style.defaultText, style.description]}>
+          style={[style.defaultText, style.description]}
+        >
           Software engineer | Leader tech at Fleye | Mobile Developer | Mentor
           at Catapulta.club @ismaelmoreiraa | Prof. na DIO
         </Text>
